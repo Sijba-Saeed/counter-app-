@@ -1,0 +1,90 @@
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  font-family: 'Poppins', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+#countertext, #countText {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 20px 0;
+  color: #38bdf8;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#countertext:hover, #countText:hover {
+  transform: scale(1.15);
+}
+
+button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  margin: 8px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: translateY(1px) scale(0.95);
+}
+
+/* Custom Colors & Neon Glows for Each Button */
+#addbtn, #addBtn {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+#addbtn:hover, #addBtn:hover {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.6);
+}
+
+#minusbtn, #minusBtn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+#minusbtn:hover, #minusBtn:hover {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+}
+
+#resetbtn, #resetBtn {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+#resetbtn:hover, #resetBtn:hover {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+}
+
+#themeBtn {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+#themeBtn:hover {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.6);
+}
+
+hr {
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+  margin: 30px 0;
+}
